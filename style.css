@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+}
+p{
+    line-height: 1.5;
+}
+header {
+    display: flex;
+    top:0;
+    width: 100%;
+    background-color: rgb(138, 67, 0);
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    padding: 10px;
+    animation: turun1 2s;
+    box-shadow: 0px 0px 40px rgb(138, 67, 0);
+}
+nav a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+nav a:hover{
+    background-color: rgba(238, 255, 0, 0.897);
+} 
+section.home{
+    background: url("image.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    height: 600px;
+    padding-top: 100px;
+}
+section.home div{
+    text-align: center;
+    margin: auto;
+
+}
+section.home .welcome{
+    font-size: 30px;
+}
+section.home a{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px;
+    border-radius: 20px;
+}
+section.about{
+    background: url("image3.jpg");
+    height: 600px;  
+    padding-top: 100px;
+}
+section.about div{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+section.about img{
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    height: 300px;
+}
+section.product{
+    background: url("image2.jpg");  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    height: 1200px;
+}
+section.product .container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    gap: 30px;
+}
+section.product .container .card{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 5px;
+    width:200px;
+    height: 450px;
+    margin: 15px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px;
+    transition: 0.4s;
+}
+section.product .container .card:hover{
+    transform: scale(1.1);
+}
+section.product .container .card img{
+    width: 100%;
+    border-radius: 50px;
+}
+section.product .container .card a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 7px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+section.product .container .card a:hover{
+    box-shadow: 0px 0px 35px;
+    color: rgb(16, 190, 0);
+}
+section.contact{
+    background-image: url("image.jpg");
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 800px;
+}
+section.contact .card{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    width: 500px;
+    border-radius: 50px;
+    line-height: 1.5;
+}
+section.contact .card img{
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 200px;
+}
+footer{
+    background-color: black;
+    height:50px;
+}
+footer .medsos{
+    text-align: center;
+    padding-top: 10px;
+}
+footer .medsos a{
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+footer .medsos a:hover{
+    color: rgb(3, 104, 255);
+    font-size: 20px;
+    padding: 5px 20px;
+}
+.enak{
+    color: red;
+    box-shadow: 0px 0px 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 50px;
+    width: 150px;
+    text-align: center;
+    margin-left: 25px;
+}   
+.judul{
+    color: rgb(224, 224, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+}
+.subjudul{
+    background-color: rgb(202, 202, 202, 0.5);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    width: 70%;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
+.tombolpesan{
+    font-size: 25px;
+    text-decoration: none;
+    width: 200px;
+    margin: auto;
+    padding-top: 50px;
+}
+.tombolpesan:hover{ 
+    transition: 0.3s;
+    animation: goyang 0.5s;
+    margin: auto;
+}
+.tombolpesan a{
+    box-shadow: 0px 0x 5px;
+}
+.tombolpesan a:hover{
+    box-shadow: 0px 0px 20px;
+}
+.logo{
+    float: left;
+    margin-left: 28px;
+    height: 1px;
+    margin-top: -20px;
+    text-align: left;
+}
+html {
+    scroll-behavior: smooth;    
+}
+
+@keyframes goyang{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(6deg);
+    }
+    50%{
+        transform: rotate(-6deg);
+    }
+    75%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes turun1{
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
